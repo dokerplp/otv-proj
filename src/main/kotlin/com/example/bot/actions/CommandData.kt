@@ -7,7 +7,6 @@ import org.telegram.telegrambots.meta.api.objects.Message
 import org.telegram.telegrambots.meta.api.objects.Update
 import java.io.File
 
-
 data class CommandData (
     val chatId: String,
     val commandName: String,

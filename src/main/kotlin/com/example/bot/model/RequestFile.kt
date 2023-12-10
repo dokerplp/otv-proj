@@ -1,10 +1,6 @@
 package com.example.bot.model
 
 import jakarta.persistence.*
-import lombok.Builder
-import lombok.Value
-import lombok.With
-import java.util.*
 
 @Entity
 @Table(name = "REQUESTFILES")

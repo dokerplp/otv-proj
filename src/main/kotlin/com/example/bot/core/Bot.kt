@@ -46,9 +46,9 @@ class Bot(
                 is SendVoice -> execute(msg)
             }
         } catch (e: TelegramApiException) {
-            logger.error("TelegramApiException", e)
+            logger.error(e.message, e)
         } catch (e: Exception) {
-            logger.error("UnknownException", e)
+            logger.error(e.message, e)
         }
     }
 }
