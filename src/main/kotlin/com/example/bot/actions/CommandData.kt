@@ -33,7 +33,7 @@ data class CommandData (
             val text = message.text?.replace(commandName, "")?.trim() ?: ""
 
             val (file, format) = if (message.hasPhoto()) {
-                downloadFile(message.photo[3].fileId, bot)
+                downloadFile(message.photo.last().fileId, bot)
             } else if (message.hasVideo()) {
                 downloadFile(message.video.fileId, bot)
             } else {

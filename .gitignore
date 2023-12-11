@@ -37,3 +37,4 @@ out/
 .vscode/
 /pgdata/
 env.sh
+/env_prod.sh
